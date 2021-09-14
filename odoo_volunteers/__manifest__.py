@@ -5,12 +5,12 @@
     'description' : 'Cooperative Volunteers',
     'author' : 'Intralix BI',
     'website' : 'https://www.intralix.com',
-    'version' : '14.0.2',
+    'version' : '14.0.3',
     'category' : 'training',
     'depends' : ['base'],
     'data' : [
     ],
     'demo' : [
-        'demo/volunteers_demo.xml'
+        'demo/volunteers_demo.xml',
     ]
 }
