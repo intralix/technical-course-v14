@@ -8,7 +8,7 @@ class task(models.Model):
     _description = 'Volunteers Info'
 
     name = fields.Char(
-        string='Task name',
+        string='Name',
         required=True
     )
     description = fields.Text(
