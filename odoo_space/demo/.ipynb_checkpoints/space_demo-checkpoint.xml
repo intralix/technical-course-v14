@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data noupdate="1">
+    <data noupdate="0">
         <record model="space.space" id="moenix_2021501">
             <field name="name">Economic Moenix A15</field>
             <field name="description">a moon spaceShip. </field>
