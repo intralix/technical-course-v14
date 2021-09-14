@@ -11,7 +11,7 @@
     'author' : 'Javina',
     'website' : 'https://www.odoo.com',
     'category' : 'training',
-    'version' : '0.0.1',
+    'version' : '0.0.2',
     'depends' : ['base'],
     'data' : [
         

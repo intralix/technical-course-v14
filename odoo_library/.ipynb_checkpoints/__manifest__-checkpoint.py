@@ -7,8 +7,9 @@
     'website' : 'https://www.intralix.com',
     'version' : '0.1',
     'depends' : ['base'],
+    'category' : 'training',
     'data' : [],
-     'demo' : []
+    'demo' : []
     
     
 }
