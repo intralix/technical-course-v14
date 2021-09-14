@@ -11,5 +11,6 @@
     'data' : [
     ],
     'demo' : [
+        'demo/volunteers_demo.xml'
     ]
 }
