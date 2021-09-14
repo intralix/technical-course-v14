@@ -31,4 +31,4 @@ class Space(models.Model):
     
     passengers = fields.Integer(string='Passengers',required=False)
     
-    active = fields.Boolean(string='Active',default=True)
+    active = fields.Boolean(string='Active')
