@@ -11,6 +11,7 @@
 
     ],
     'demo': [
-
+        'demo/space_demo.xml',
+        
     ]
 }
