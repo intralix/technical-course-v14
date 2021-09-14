@@ -5,7 +5,7 @@
             <field name="name">Task eat apple</field>
             <field name="description">Eat apple</field>
             <field name="type">food</field>
-            <field name="date">2021-09-09</field>
+            <field name="date">2021-09-09 09:00:00</field>
             <field name="repeat">True</field>
             <field name="recurrence">Lunes, Martes</field>
         </record>
@@ -13,7 +13,7 @@
             <field name="name">Task walk</field>
             <field name="description">Walk</field>
             <field name="type">exercise</field>
-            <field name="date">2021-09-09</field>
+            <field name="date">2021-09-09 17:00:00</field>
             <field name="repeat">True</field>
             <field name="recurrence">Sabado</field>
         </record>
