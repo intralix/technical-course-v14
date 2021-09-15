@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <record id="group_volunteer_admin" model="res.group" >
+    <record id="group_volunteer_admin" model="res.groups" >
         <field name="name" >Volunteers / Principal</field>
     </record>
-    <record id="group_volunteer_volunteer" model="res.group" >
+    <record id="group_volunteer_volunteer" model="res.groups" >
         <field name="name" >Volunteers / Volunteer</field>
     </record>
 </odoo>
