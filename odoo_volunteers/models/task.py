@@ -18,8 +18,7 @@ class task(models.Model):
         string='Type',
         required=True
     )
-    start_date = fields.Date()
-    end_date = fields.Date()
+    date = fields.Date()
     repeat = fields.Boolean(
         string='Active',
         default=False
