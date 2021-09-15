@@ -8,9 +8,10 @@
     'version' : '0.2',
     'depends' : ['base'],
     'category' : 'training',
-    'data' : [
-            'views/library_menuitems.xml',
+    'data' : [            
             'views/book_views.xml'
     ],
-    'demo' : [ 'demo/library_demo.xml']   
+    'demo' : [ 
+        'demo/library_demo.xml'
+        ]   
 }
