@@ -5,11 +5,11 @@
     'description' : 'Module for management of books',
     'author' : 'logica mobile',
     'website' : 'https://www.intralix.com',
-    'version' : '0.3',
+    'version' : '0.0.5',
     'depends' : ['base'],
     'category' : 'training',
     'data' : [            
-            'views/book_views.xml'
+            'views/books_views.xml'
     ],
     'demo' : [ 
         'demo/library_demo.xml'
