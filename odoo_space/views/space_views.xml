@@ -7,15 +7,17 @@
             <field name="arch" type="xml">
                 <form string="Space Form">
                     <sheet>
-                        <h1><field name="name"/></h1>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
                         <group>
                             <group>
-                                    <field name="active"/>
-                                
+                                <field name="active"/>
+
                             </group>
                             <group>
                                 <field name="shiptype"/>
-                                
+
                             </group>
                         </group>
                         <notebook>
@@ -23,25 +25,25 @@
                                 <field name="description"/>
                             </page>
                         </notebook>
-                        
                     </sheet>
                 </form>
             </field>
         </record>
-        
         <record model="ir.ui.view" id="space_view_list">
             <field name="name">space.space.list</field>
             <field name="model">space.space</field>
             <field name="arch" type="xml">
-                <tree string="Course List">
+                <tree string="Ship List">
                     <field name="name"/>
                     <field name="description"/>
-                    <field name="shiptype"/>                   
+                    <field name="width"/>
+                    <field name="height"/>
+                    <field name="fueltype"/>
+                    <field name="shiptype"/>
+                    <field name="passengers"/>
                 </tree>
             </field>
         </record>
-        
-        
         <record model="ir.ui.view" id="space_view_search">
             <field name="name">space.space.list</field>
             <field name="model">space.space</field>
@@ -49,11 +51,14 @@
                 <search>
                     <field name="name"/>
                     <field name="description"/>
-                    <field name="shiptype"/>                   
+                    <field name="width"/>
+                    <field name="height"/>
+                    <field name="fueltype"/>
+                    <field name="shiptype"/>
+                    <field name="passengers"/>
                 </search>
             </field>
         </record>
-        
-    </data> 
+    </data>
 </odoo>
 

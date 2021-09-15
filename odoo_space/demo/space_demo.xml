@@ -23,8 +23,7 @@
         </record>
         <record model="space.space" id="perum_93873">
             <field name="name">Perum Ore V15</field>
-            <field name="description">The ship of
-                    premium users!</field>
+            <field name="description">The ship of premium users!</field>
             <field name="width">3000</field>
             <field name="height">5500</field>
             <field name="fueltype">volts</field>

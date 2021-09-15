@@ -5,14 +5,14 @@ from odoo import models, fields, api
 class Space(models.Model):
     _name = 'space.space'
     _description = 'Information About spaceShips'
-    name = fields.Char(string='Title',required=True)
+    name = fields.Char(string='Nombre',required=True)
     
-    description = fields.Text(string='Description')
+    description = fields.Text(string='Descripción de la nave')
     
-    width = fields.Integer(string='Width',required=True)
-    height = fields.Integer(string='Height',required=True)
+    width = fields.Integer(string='Anchura',required=True)
+    height = fields.Integer(string='Altura',required=True)
     
-    fueltype = fields.Selection(string='fuelType',
+    fueltype = fields.Selection(string='Consumible',
                             selection=[
                                 ('diesel','Diesel'),
                                 ('gas','Gas'),
@@ -20,7 +20,7 @@ class Space(models.Model):
                             ],
                             copy=False)
     
-    shiptype = fields.Selection(string='shipType',
+    shiptype = fields.Selection(string='Tipo de nave',
                             selection=[
                                 ('moenix','Moenix'),
                                 ('goliath','Goliath'),
@@ -28,6 +28,6 @@ class Space(models.Model):
                             ],
                             copy=False)
     
-    passengers = fields.Integer(string='Passengers',required=False)
+    passengers = fields.Integer(string='Pasajeros',required=False)
     
     active = fields.Boolean(string='Active')
