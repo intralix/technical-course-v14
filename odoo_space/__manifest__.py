@@ -8,6 +8,8 @@
     'version': '14.0.1',
     'depends': ['base'],
     'data': [
+        'security/space_security.xml',
+        'security/ir.model.access.csv',
         'views/space_menuitems.xml',
         'views/space_views.xml'
     ],

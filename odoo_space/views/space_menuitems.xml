@@ -11,17 +11,8 @@
                 </p>
             </field>
         </record>
-        
-        <menuitem name="Odoo Spaceships"
-                  id="menu_space"
-                  sequence="1"
-                  />
-        
+        <menuitem name="Odoo Spaceships" id="menu_space" sequence="1" />
         <menuitem id="menu_space_sub" name="Odoo Spaceships" parent="menu_space" sequence="2"/>
-        
-        <menuitem id="menu_space_ships" name="Spaceships" parent="menu_space_sub" sequence="3"
-                  action="space_list_action"/>
-        
-        
-    </data>  
+        <menuitem id="menu_space_ships" name="Spaceships" parent="menu_space_sub" sequence="3" action="space_list_action"/>
+    </data>
 </odoo>
