@@ -9,8 +9,8 @@ class Space(models.Model):
     
     description = fields.Text(string='Descripción de la nave')
     
-    width = fields.Integer(string='Anchura',required=True)
-    height = fields.Integer(string='Altura',required=True)
+    width = fields.Integer(string='Anchura (Mts)',required=True)
+    height = fields.Integer(string='Altura (Mts)',required=True)
     
     fueltype = fields.Selection(string='Consumible',
                             selection=[
