@@ -13,11 +13,12 @@
     'category' : 'training',
     'version' : '0.0.2',
     'depends' : ['base'],
+    
     'data' : [
-        
+        'views/course_views.xml'        
     ],
     
     'demo' : [
-        
+        'demo/academy_demo.xml'
     ],
 }
