@@ -9,6 +9,7 @@
     'category' : 'training',
     'depends' : ['base'],
     'data' : [
+        'security/ir.model.access.csv',
         'views/volunteers_views.xml',
         'views/volunteers_menuitems.xml'
     ],
