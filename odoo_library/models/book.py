@@ -10,5 +10,5 @@ class Book(models.Model):
     editores = fields.Char(string = 'Editor',required = True)
     year = fields.Integer(string = 'Year',required = True)   
     isbn = fields.Char(string = 'ISBN',required = True) 
-    genre = fields.Char(string = 'Genre',Required = True)
-    notes = fields.Text(string = 'notes',Required = True)
+    genre = fields.Char(string = 'Genre',required = True)
+    notes = fields.Text(string = 'notes',required = True)
