@@ -9,5 +9,5 @@
     'depends' : ['base'],
     'category' : 'training',
     'data' : [],
-    'demo' : []   
+    'demo' : [ 'demo/library_demo.xml']   
 }
