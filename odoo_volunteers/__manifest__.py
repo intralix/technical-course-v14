@@ -9,7 +9,8 @@
     'category' : 'training',
     'depends' : ['base'],
     'data' : [
-        'views/volunteers_views.xml'
+        'views/volunteers_views.xml',
+        'views/volunteers_menuitems.xml'
     ],
     'demo' : [
         'demo/volunteers_demo.xml',
