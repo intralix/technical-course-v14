@@ -3,17 +3,23 @@
     <data noupdate="0">
         <record model="cooperative.volunteers" id="task_eat_1001" >
             <field name="name">Task eat apple</field>
+            <field name="leader">Ivan</field>
             <field name="description">Eat apple</field>
+            <field name="state">draft</field>
             <field name="type">food</field>
-            <field name="date">2021-09-09 09:00:00</field>
+            <field name="start_date">2021-09-09 09:00:00</field>
+            <field name="end_date">2021-09-09 09:30:00</field>
             <field name="repeat">True</field>
             <field name="recurrence">Lunes, Martes</field>
         </record>
         <record model="cooperative.volunteers" id="task_walk_1001" >
             <field name="name">Task walk</field>
+            <field name="leader">Ivan</field>
             <field name="description">Walk</field>
+            <field name="state">draft</field>
             <field name="type">exercise</field>
-            <field name="date">2021-09-09 17:00:00</field>
+            <field name="start_date">2021-09-09 17:00:00</field>
+            <field name="end_date">2021-09-09 17:30:00</field>
             <field name="repeat">True</field>
             <field name="recurrence">Sabado</field>
         </record>

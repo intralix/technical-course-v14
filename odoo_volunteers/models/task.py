@@ -14,11 +14,25 @@ class task(models.Model):
     description = fields.Text(
         string='Description'
     )
+    leader = fields.Char(
+        string='Leader',
+        required=True
+    )
+    state = fields.Selection(string="State",
+        selection=[
+            ('draft','Draft'),
+            ('ready','Ready'),
+            ('in progress','In progress'),
+            ('finish','Finish')
+        ],
+        copy=False
+    )
     type = fields.Char(
         string='Type',
         required=True
     )
-    date = fields.Date()
+    start_date = fields.Date()
+    end_date = fields.Date()
     repeat = fields.Boolean(
         string='Active',
         default=False

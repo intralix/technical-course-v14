@@ -8,7 +8,9 @@
                 <form string="Volunteers Form">
                     <sheet>
                         <h1><field name="name" /></h1>
-                        <field name="date" />
+                        <field name="leader" />
+                        <field name="start_date" />
+                        <field name="end_date" />
                     </sheet>
                 </form>
             </field>
