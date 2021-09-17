@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="volunteers_view_form" >
+            <field name="name">volunteers.view.form</field>
+            <field name="model">cooperative.volunteers</field>
+            <field name="arch" type="xml" >
+                <form string="Volunteers Form">
+                    <sheet>
+                        <h1><field name="name" /></h1>
+                    </sheet>
+                    <field name="leader" />
+                    <field name="state" />
+                    <field name="start_date" />
+                    <field name="end_date" />
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="volunteers_view_list" >
+            <field name="name">volunteers.view.list</field>
+            <field name="model">cooperative.volunteers</field>
+            <field name="arch" type="xml" >
+                <tree string="Volunteers list">
+                    <field name="name" />
+                    <field name="description" />
+                    <field name="type" />
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="volunteers_view_search" >
+            <field name="name">volunteers.view.search</field>
+            <field name="model">cooperative.volunteers</field>
+            <field name="arch" type="xml" >
+                <search>
+                    <field name="name" />
+                    <field name="description" />
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>
