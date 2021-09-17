@@ -20,5 +20,6 @@ class Book(models.Model):
     @api.onchange('isbn')
     def _onchange_length_isbn(self):
         _logger.error("ISBN Value:%s", self.isbn)
-        if len(self.isbn) < 13:
-            raise UserError('The length of the ISBN cannot be less than 13 characters')
+        if(self.isbn):
+            if len(self.isbn) < 13:
+                raise UserError('The length of the ISBN cannot be less than 13 characters')
