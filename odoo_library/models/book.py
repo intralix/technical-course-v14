@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
-from odoo.Exceptions import UserError,ValidationError
+from odoo.exceptions import UserError,ValidationError
 
 class Book(models.Model):
     _name = 'library.book'
