@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
-
+from odoo.exceptions import UserError, ValidationError
 class task(models.Model):
 
     _name = 'cooperative.volunteers'
@@ -40,3 +40,7 @@ class task(models.Model):
     recurrence = fields.Text(
         string='Recurrence'
     )
+
+    @api.onchange('leader')
+    def _onchange_total_price(self):
+        self.state = 'ready'
