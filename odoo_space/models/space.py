@@ -33,21 +33,8 @@ class Space(models.Model):
     
     active = fields.Boolean(string='Active')
 
-    base_price = fields.Float(string='Base Price', default=0.00)
-
-    additional_fee = fields.Float(string='Additional Fee',default=0.00)
-
-    total_price = fields.Float(string='Total price',readonly=True)
-
-    @api.onchange('base_price','additional_fee')
-    def _onchange_total_price(self):
-        if self.base_price < 0.00:
-            raise UserError('Base Price cannot be set as Negative')
-
-        self.total_price = self.base_price + self.additional_fee
-
-    @api.constrains('additional_fee')
-    def _check_additional_fee(self):
+    @api.constrains('width','height')
+    def _check_dimensions(self):
         for record in self:
-            if record.additional_fee < 10.00:
-                raise ValidationError('Additional Fees cannot be less than 10.10: %s' % record.additional_fee) 
+            if record.width > record.height:
+                raise UserError('El ancho de la nave no puede ser mayor a su altura.')
