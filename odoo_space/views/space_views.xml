@@ -18,6 +18,7 @@
                                 <field name="height"/>
                             </group>
                             <group>
+                                <field name="passengers"/> 
                                 <field name="active"/>
                             </group>
                         </group>
