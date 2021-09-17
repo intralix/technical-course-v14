@@ -14,8 +14,8 @@
         <record model="space.space" id="goliath_48365">
             <field name="name">Goliath SpaceShipX</field>
             <field name="description"></field>
-            <field name="width">230</field>
-            <field name="height">160</field>
+            <field name="width">160</field>
+            <field name="height">230</field>
             <field name="fueltype">gas</field>
             <field name="shiptype">goliath</field>
             <field name="passengers">1</field>
