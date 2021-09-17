@@ -9,7 +9,9 @@
     'depends' : ['base'],
     'category' : 'training',
     'data' : [            
-            'views/books_views.xml'
+            'views/books_views.xml',
+            'security/library_security.xml',
+            'security/ir.model.access.csv',
     ],
     'demo' : [ 
         'demo/library_demo.xml'

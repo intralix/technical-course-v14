@@ -33,10 +33,21 @@
        <field name="arch" type="xml">    
                <search>
                    <field name="notes"/>
-               </search>
-    
+               </search>    
        </field>
    </record>
+
+   <record model="ir.ui.view" id="book_view_list">
+       <field name="name">library.book.list</field>
+       <field name="model">library.book</field>
+       <field name="arch" type="xml">    
+          <tree string="Books List">
+          <field name="name"/>
+          <field name="genre"/>
+          </tree>
+       </field>
+   </record>
+
 </data>
 
 
