@@ -62,5 +62,5 @@ class Course(models.Model):
     def _check_aditional_fee(self):
         
         for record in self:
-            if(record.base_price < 10.00):
+            if(record.aditional_fee < 10.00):
                 raise ValidationError('Additional fee cannot be less than 10.00: %s ' % record.aditional_fee)
