@@ -15,6 +15,9 @@
     'depends' : ['base'],
     
     'data' : [
+        'security/academy_security.xml',
+        'security/ir.model.access.csv',        
+        'views/academy_menu_items.xml',
         'views/course_views.xml'        
     ],
     
