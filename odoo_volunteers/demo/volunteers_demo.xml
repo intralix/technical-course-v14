@@ -3,7 +3,6 @@
     <data noupdate="1">
         <record model="cooperative.volunteers" id="task_eat_1001" >
             <field name="name">Task eat apple</field>
-            <field name="leader">Ivan</field>
             <field name="description">Eat apple</field>
             <field name="state">draft</field>
             <field name="type">food</field>
@@ -14,7 +13,6 @@
         </record>
         <record model="cooperative.volunteers" id="task_walk_1001" >
             <field name="name">Task walk</field>
-            <field name="leader">Ivan</field>
             <field name="description">Walk</field>
             <field name="state">draft</field>
             <field name="type">exercise</field>

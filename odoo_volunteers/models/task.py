@@ -42,7 +42,6 @@ class task(models.Model):
     )
     volunteer_ids = fields.Many2many(
         comodel_name='res.partner',
-        inverse_name='volunteer_id',
         string='Volunteer'
     )
     @api.onchange('leader')
