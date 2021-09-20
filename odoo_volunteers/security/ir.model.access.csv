@@ -1,3 +1,5 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
-volunteers_admin,volunteers_admin,model_cooperative_volunteers,,1,1,1,1
+volunteers_admin,volunteers_admin,model_cooperative_volunteers,group_volunteers_admin,1,1,1,1
 volunteers_volunteer,volunteers_volunteer,model_cooperative_volunteers,,1,1,1,0
+approbation_admin,approbation_admin,model_approbation_volunteers,group_approbation_admin,1,1,1,1
+approbation_volunteer,approbation_volunteer,model_approbation_volunteers,,1,1,1,0

@@ -14,9 +14,9 @@ class task(models.Model):
     description = fields.Text(
         string='Description'
     )
-    leader = fields.Char(
-        string='Leader',
-        required=True
+    leader = fields.Many2one(
+        comodel_name='res.partner',
+        string='Leader'
     )
     state = fields.Selection(string="State",
         selection=[
@@ -31,8 +31,8 @@ class task(models.Model):
         string='Type',
         required=True
     )
-    start_date = fields.Date()
-    end_date = fields.Date()
+    start_date = fields.Datetime()
+    end_date = fields.Datetime()
     repeat = fields.Boolean(
         string='Active',
         default=False
@@ -40,7 +40,10 @@ class task(models.Model):
     recurrence = fields.Text(
         string='Recurrence'
     )
-
+    volunteer_ids = fields.Many2many(
+        comodel_name='res.partner',
+        string='Volunteer'
+    )
     @api.onchange('leader')
     def _onchange_total_price(self):
         self.state = 'ready'

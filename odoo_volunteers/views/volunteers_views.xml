@@ -7,12 +7,21 @@
             <field name="arch" type="xml" >
                 <form string="Volunteers Form">
                     <sheet>
+                    <group>
                         <h1><field name="name" /></h1>
+                        <field name="leader" string="Leader" />
+                        <field name="state" />
+                        <field name="start_date"/>
+                        <field name="end_date" />
+                        <field name="description" />
+                        <field name="type" />
+                    </group>
+                        <notebook>
+                            <page string="Volunteers">
+                                <field name="volunteer_ids" />
+                            </page>
+                        </notebook>
                     </sheet>
-                    <field name="leader" />
-                    <field name="state" />
-                    <field name="start_date" />
-                    <field name="end_date" />
                 </form>
             </field>
         </record>
@@ -35,6 +44,18 @@
                     <field name="name" />
                     <field name="description" />
                 </search>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="volunteers_view_gantt" >
+            <field name="name">volunteers.view.gantt</field>
+            <field name="model">cooperative.volunteers</field>
+            <field name="arch" type="xml" >
+                <gantt string="Volunteers task" 
+                    date_start="start_date" 
+                    date_stop="end_date"
+                    progress="state"
+                    default_group_by="leader"
+                />
             </field>
         </record>
     </data>
