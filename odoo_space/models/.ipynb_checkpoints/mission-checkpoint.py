@@ -13,7 +13,7 @@ class Mission(models.Model):
 
     name = fields.Char(string='Nave espacial',related='space_id.name') 
 
-    tripulation_ids = fields.One2many(comodel_name='res.partner',string='Tripulantes')
+    tripulation_ids = fields.Many2many(comodel_name='res.partner',string='Tripulantes')
 
     start_date = fields.Datetime(string='Fecha de lanzamiento')
 
