@@ -12,6 +12,7 @@
         'security/volunteers_security.xml',
         'security/ir.model.access.csv',
         'views/volunteers_views.xml',
+        'views/approbation_views.xml',
         'views/volunteers_menuitems.xml'
     ],
     'demo' : [

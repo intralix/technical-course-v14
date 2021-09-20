@@ -3,4 +3,7 @@
     <record id="group_volunteers_admin" model="res.groups" >
         <field name="name" >Volunteers / Admin</field>
     </record>
+    <record id="group_approbation_admin" model="res.groups" >
+        <field name="name" >Approbation / Admin</field>
+    </record>
 </odoo>
