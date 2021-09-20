@@ -23,8 +23,7 @@
      <field name="name">library.renting.list</field>
      <field name="model">library.renting</field>
      <field name="arch" type="xml">    
-          <tree string="Renting List">
-          <field name="name"/>
+          <tree string="Renting List">         
           <field name="client_id"/>
           </tree>
        </field>
