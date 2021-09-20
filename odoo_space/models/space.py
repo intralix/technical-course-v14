@@ -30,6 +30,8 @@ class Space(models.Model):
                             copy=False)
     
     passengers = fields.Integer(string='Pasajeros',required=False)
+
+    mission_ids = fields.One2many(comodel_name='space.mission',inverse_name='space_id',string='Misiones disponibles')
     
     active = fields.Boolean(string='Active')
 

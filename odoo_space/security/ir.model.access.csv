@@ -2,3 +2,6 @@ id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 space_admin,space admin,model_space_space,group_space_admin,1,1,1,1
 space_tripulation,space tripulation,model_space_space,,1,1,1,0
 space_user,space user,model_space_space,,1,0,0,0
+mission_admin,mission admin,model_space_mission,group_space_admin,1,1,1,1
+mission_tripulation,mission tripulation,model_space_mission,,1,1,1,0
+mission_user,mission user,model_space_mission,,1,0,0,0
