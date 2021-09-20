@@ -11,7 +11,8 @@
         'security/space_security.xml',
         'security/ir.model.access.csv',
         'views/space_menuitems.xml',
-        'views/space_views.xml'
+        'views/space_views.xml',
+        'views/mission_views.xml'
     ],
     'demo': [
         'demo/space_demo.xml',
