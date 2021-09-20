@@ -8,9 +8,8 @@
         <field name="arch" type="xml">        
         <form string="Renting Form">
             <sheet>
-               <h1><field name="name" /></h1>
-               <group>              
-                  <field name="nameclient" />
+               <h1><field name="nameclient" /></h1>
+               <group>       
                   <field name="startdate" />     
                   <field name="enddate" />     
                   <field name="phone" />                                                                    
