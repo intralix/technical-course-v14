@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data noupdate="0">
+    <data noupdate="1">
         <record model="cooperative.volunteers" id="task_eat_1001" >
             <field name="name">Task eat apple</field>
             <field name="leader">Ivan</field>
