@@ -16,6 +16,9 @@ class Book(models.Model):
     genre = fields.Char(string = 'Genre',required = True)
     notes = fields.Text(string = 'notes',required = True)
 
+    renting_id = fields.One2many(comodel_name='library.renting',
+                                 inverse_name= 'book_id',
+                                 string = 'Rentings')   
 
     @api.onchange('isbn')
     def _onchange_length_isbn(self):
