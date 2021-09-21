@@ -18,13 +18,17 @@
                                 <field name="height"/>
                             </group>
                             <group>
-                                <field name="passengers"/> 
+                                <field name="passengers"/>
+                                <field name="fuel"/>
                                 <field name="active"/>
                             </group>
                         </group>
                         <notebook>
                             <page string="Descripción">
                                 <field name="description"/>
+                            </page>
+                            <page string="Seguridad">
+                                <field name="securitydesc"/>
                             </page>
                         </notebook>
                     </sheet>
@@ -43,6 +47,7 @@
                     <field name="fueltype"/>
                     <field name="shiptype"/>
                     <field name="passengers"/>
+                    <field name="fuel"/>
                 </tree>
             </field>
         </record>
@@ -58,9 +63,23 @@
                     <field name="fueltype"/>
                     <field name="shiptype"/>
                     <field name="passengers"/>
+                    <field name="fuel"/>
                 </search>
             </field>
         </record>
+
+        <record id="space_space_view_graph" model="ir.ui.view">
+            <field name="name">space.space.view.graph</field>
+            <field name="model">space.space</field>
+            <field name="arch" type="xml">
+                <graph string="Gráfica de combustible" type="bar">
+                    <field name="name"></field>
+                    <field name="fuel" type="measure"></field>
+                </graph>
+            </field>
+        </record>
+
+
     </data>
 </odoo>
 

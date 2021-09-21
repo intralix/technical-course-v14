@@ -9,9 +9,14 @@ class Space(models.Model):
     name = fields.Char(string='Nombre',required=True)
     
     description = fields.Text(string='Descripción de la nave')
+
+    securitydesc = fields.Text(string='Descripción del a seguridad')
     
     width = fields.Integer(string='Anchura (Mts)',required=True)
     height = fields.Integer(string='Altura (Mts)',required=True)
+
+    fuel = fields.Integer(string='Combustible actal',required=True)
+    motor = fields.Integer(string='Cantidad motores',required=True)
     
     fueltype = fields.Selection(string='Consumible',
                             selection=[
