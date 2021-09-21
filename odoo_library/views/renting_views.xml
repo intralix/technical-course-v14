@@ -31,8 +31,7 @@
             </field>
         </record>
 
-
-        <record id="renting_view_map" model="ir.ui.view">
+<!--   <record id="renting_view_map" model="ir.ui.view">
             <field name="name">library.renting.map</field>
             <field name="model">library.renting</field>
             <field name="arch" type="xml">
@@ -46,7 +45,7 @@
                 </map>
             </field>
         </record>
-
+-->
 
 
     </data>
