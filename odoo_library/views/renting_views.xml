@@ -2,34 +2,50 @@
 <odoo>
 
     <data>
-    <record id="renting_view_form" model="ir.ui.view">
-        <field name="name">library.renting.form</field>
-        <field name="model">library.renting</field>
-        <field name="arch" type="xml">        
-        <form string="Renting Form">
-            <sheet>
-               <h1><field name="nameclient" /></h1>
-               <group>       
-                  <field name="startdate" />     
-                  <field name="enddate" />     
-                  <field name="phone" />                                                                    
-               </group>               
-            </sheet>
-        </form>    
-        </field>
-    </record>            
+        <record id="renting_view_form" model="ir.ui.view">
+            <field name="name">library.renting.form</field>
+            <field name="model">library.renting</field>
+            <field name="arch" type="xml">
+                <form string="Renting Form">
+                    <sheet>
+                        <h1>
+                            <field name="nameclient" />
+                        </h1>
+                        <group>
+                            <field name="startdate" />
+                            <field name="enddate" />
+                            <field name="phone" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
 
-<record id="renting_view_list" model="ir.ui.view">
-     <field name="name">library.renting.list</field>
-     <field name="model">library.renting</field>
-     <field name="arch" type="xml">    
-          <tree string="Renting List">         
-          <field name="client_id"/>
-          </tree>
-       </field>
-</record>
+        <record id="renting_view_list" model="ir.ui.view">
+            <field name="name">library.renting.list</field>
+            <field name="model">library.renting</field>
+            <field name="arch" type="xml">
+                <tree string="Renting List">
+                    <field name="client_id"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="renting_view_map" model="ir.ui.view">
+            <field name="name">library.renting.map</field>
+            <field name="model">library.renting</field>
+            <field name="arch" type="xml">
+                <map latitude="20.64257857908376" longitude="-103.43776161151244">
+                    <field name="nameclient"/>
+                    <field name="book_id"/>                 
+                </map>
+            </field>
+        </record>
+
+
 
     </data>
-    
+
 
 </odoo>
