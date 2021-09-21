@@ -32,7 +32,7 @@
             <field name="shiptype">perum</field>
             <field name="passengers">7</field>
             <field name="active">True</field>
-            <field name="fuel">12000000</field>
+            <field name="fuel">2500</field>
         </record>
     </data>
 </odoo>

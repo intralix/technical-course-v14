@@ -15,7 +15,7 @@ class Space(models.Model):
     width = fields.Integer(string='Anchura (Mts)',required=True)
     height = fields.Integer(string='Altura (Mts)',required=True)
 
-    fuel = fields.Integer(string='Combustible actal',required=True)
+    fuel = fields.Integer(string='Combustible actual',required=True)
     motor = fields.Integer(string='Cantidad de motores')
     
     fueltype = fields.Selection(string='Consumible',
