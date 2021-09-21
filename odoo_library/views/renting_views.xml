@@ -31,21 +31,17 @@
             </field>
         </record>
 
-<!--   <record id="renting_view_map" model="ir.ui.view">
+ <record id="renting_view_map" model="ir.ui.view">
             <field name="name">library.renting.map</field>
             <field name="model">library.renting</field>
             <field name="arch" type="xml">
-                <map>
-                  <field name="nameclient"/>
-                    <template>
-                        <div>
-                            Book <t t-esc="record.book_id"/>
-                        </div>
-                    </template>                                     
+                <map res_partner="client_id">
+                  <marker-popup>
+                    <field name="client_id" string="Customer"/>
+                  </marker-popup>            
                 </map>
             </field>
         </record>
--->
 
 
     </data>
