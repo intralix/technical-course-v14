@@ -10,6 +10,7 @@
             <field name="shiptype">moenix</field>
             <field name="passengers">3</field>
             <field name="active">True</field>
+            <field name="fuel">1200</field>
         </record>
         <record model="space.space" id="goliath_48365">
             <field name="name">Goliath SpaceShipX</field>
@@ -20,6 +21,7 @@
             <field name="shiptype">goliath</field>
             <field name="passengers">1</field>
             <field name="active">True</field>
+            <field name="fuel">793</field>
         </record>
         <record model="space.space" id="perum_93873">
             <field name="name">Perum Ore V15</field>
@@ -30,6 +32,7 @@
             <field name="shiptype">perum</field>
             <field name="passengers">7</field>
             <field name="active">True</field>
+            <field name="fuel">12000000</field>
         </record>
     </data>
 </odoo>
