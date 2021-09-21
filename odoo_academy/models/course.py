@@ -38,7 +38,7 @@ class Course(models.Model):
         default=0.00
     )
     
-    aditional_fee = fields.Float(
+    additional_fee = fields.Float(
         string="Aditional Fee",
         default=0.00
     )
@@ -61,7 +61,7 @@ class Course(models.Model):
         if(self.base_price < 0.00):
             raise UserError('Base Price cannot be set as negative')
             
-        self.total_price = self.base_price + self.aditional_fee
+        self.total_price = self.base_price + self.additional_fee
         
         
     @api.constrains('aditional_fee')
@@ -69,4 +69,4 @@ class Course(models.Model):
         
         for record in self:
             if(record.aditional_fee < 10.00):
-                raise ValidationError('Additional fee cannot be less than 10.00: %s ' % record.aditional_fee)
+                raise ValidationError('Additional fee cannot be less than 10.00: %s ' % record.additional_fee)
