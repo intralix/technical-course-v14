@@ -36,9 +36,13 @@
             <field name="name">library.renting.map</field>
             <field name="model">library.renting</field>
             <field name="arch" type="xml">
-                <map latitude="20.64257857908376" longitude="-103.43776161151244">
-                    <field name="nameclient"/>
-                    <field name="book_id"/>                 
+                <map>
+                  <field name="nameclient"/>
+                    <template>
+                        <div>
+                            Book <t t-esc="record.book_id"/>
+                        </div>
+                    </template>                                     
                 </map>
             </field>
         </record>
