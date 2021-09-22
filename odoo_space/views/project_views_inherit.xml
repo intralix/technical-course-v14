@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_project_form_inherit_space" model="ir.ui.view">
+            <field name="name">project.project.inherit.space</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref='project.edit_project'></field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='allowed_internal_user_ids']" position="after">
+                    <field name="mission_id"></field>
+                </xpath>
+
+                <xpath expr="//sheet//notebook" position="inside">
+                    <page string="Tripulación" attrs="{'invisible':[('mission_id','=',False)]}">
+                        <field name="tripulation_ids">
+                            <tree>
+                                <field name="name"/>
+                                <field name="description"/>
+                                <field name="space_id"/>
+                                <field name="start_date"/>
+                                <field name="end_date"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
