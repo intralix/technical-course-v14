@@ -11,10 +11,12 @@ class ProjectWizard(models.TransientModel):
 
     mission_id = fields.Many2one(comodel_name='space.mission', string='Misión del asistente',required=True,default=_default_mission)
 
+    mission_project_ids = fields.One2many(comodel_name='project.project',string='Proyectos en la misión',related='mission_id.project_ids',help='Proyectos actuales en la misión actual')
+    
+
     project_ids =  fields.One2many(comodel_name='project.project',string='Proyectos',inverse_name='mission_id')
 
-    mission_project_ids = fields.Many2many(comodel_name='project.project',string='Proyectos en la misión',related='mission_id.project_ids',help='Proyectos actuales en la misión actual')
-    
+
     def create_mission_project(self):
         return
         #for project in self.project_ids:

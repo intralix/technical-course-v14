@@ -13,9 +13,9 @@
 
                     </group>
                     <footer>
-                        <button name="create_mission_project" type="object" string="Crear" class="oe_highlight" />
+                        <button name="create_mission_project" type="object" string="Crear" class="oe_highlight"/>
                         or
-                        <button special="cancel" string="Cancelar" />
+                        <button special="cancel" string="Cancelar"/>
                     </footer>
                 </form>
 
@@ -27,7 +27,7 @@
         binding_model="space.mission" 
         res_model="space.mission.wizard" 
         view_model="form" 
-        target="new" />
+        target="new"/>
 
     </data>
 
