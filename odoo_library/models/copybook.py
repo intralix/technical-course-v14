@@ -11,9 +11,7 @@ class CopyBook(models.Model):
             'library.book': 'book_id'
         }
 
-    name = fields.Char(string='Name')
-    maker = fields.Char(string='Maker')
-
+    copy_book_identifier = fields.Char(string='Book Copy Identifier')    
     """
     # una copia de libro pertenece a una librería
     library_id = fields.Many2one('delegation.library', 
