@@ -3,3 +3,5 @@ volunteers_admin,volunteers_admin,model_cooperative_volunteers,group_volunteers_
 volunteers_volunteer,volunteers_volunteer,model_cooperative_volunteers,,1,1,1,0
 approbation_admin,approbation_admin,model_approbation_volunteers,group_approbation_admin,1,1,1,1
 approbation_volunteer,approbation_volunteer,model_approbation_volunteers,,1,1,1,0
+volunteers_contact_wizard_admin,volunteers_contact_wizard_admin,model_volunteers_contact_wizard,group_volunteers_wizard_admin,1,1,1,1
+volunteers_contact_wizard,volunteers_contact_wizard,model_volunteers_contact_wizard,,1,1,1,0

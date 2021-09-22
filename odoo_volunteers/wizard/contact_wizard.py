@@ -22,5 +22,5 @@ class ContactWizard(models.TransientModel):
     volunteer_ids = fields.Many2many(comodel_name='res.partner',string='Volunteers_con')
 
     def create_volunteers(self):
-        algo=""
+        self.task_id.volunteer_ids = self.volunteer_ids
         

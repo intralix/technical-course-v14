@@ -9,7 +9,7 @@
                     <group>
                         <field name='task_id' />
                         <field name='task_volunteer_ids' invisible="1" />
-                        <field name='volunteer_ids' domain="[('id','in', task_volunteer_ids)]" />
+                        <field name='volunteer_ids' />
                     </group>
                     <footer>
                         <button 
