@@ -14,7 +14,7 @@
             'security/ir.model.access.csv',
             'views/library_menuitems.xml',
             'views/books_views.xml',
-            'views/renting_views.xml'
+            'views/renting_views.xml',
             'wizards/book_wizard_view.xml'
 
     ],

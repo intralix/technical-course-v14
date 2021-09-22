@@ -17,8 +17,8 @@
     <act_window id="launch_book_wizard" 
                 name="View Book" 
                 binding_model="library.book" 
-                res_model="library.book.wizard"
-                view_mode="form"
+                res_model="library.book.wizard" 
+                view_mode="form" 
                 target="new"/>            
     </data>
     
