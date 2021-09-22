@@ -18,7 +18,6 @@
                             string="Create"
                             class="oe_highlight"
                         />
-                        or
                         <button 
                             special="cancel"
                             string="Cancel"
