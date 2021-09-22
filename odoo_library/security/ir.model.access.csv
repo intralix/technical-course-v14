@@ -3,3 +3,5 @@ library_admin,library admin,model_library_book,group_library_admin,1,1,1,1
 library_read_all,library client,model_library_book,,1,0,0,0
 renting_admin,renting admin,model_library_renting,group_library_admin,1,1,1,1
 renting_read_all,renting read all,model_library_renting,,1,0,0,0
+bookscopy_admin,bookscopy admin,model_library_bookscopy,group_library_admin,1,1,1,1
+bookscopy_read_all,bookscopy read all,model_library_bookscopy,,1,0,0,0
