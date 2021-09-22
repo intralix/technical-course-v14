@@ -19,7 +19,7 @@ class Mission(models.Model):
 
     end_date = fields.Datetime(string='Fecha de llegada')
 
-    project_ids =  fields.One2many(comodel_name='project.project',string='Proyectos')
+    project_ids =  fields.One2many(comodel_name='project.project',string='Proyectos',inverse_name='mission_id')
     
     active = fields.Boolean(string='Active')
 
