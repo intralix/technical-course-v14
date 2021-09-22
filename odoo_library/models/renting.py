@@ -11,4 +11,5 @@ class Renting(models.Model):
     phone = fields.Char(string = 'Phone Client')
 
     client_id = fields.Many2one(comodel_name='res.partner',string = 'Client')
-    book_id = fields.Many2many(comodel_name='library.book',string = 'BooksRenting')   
+    #book_id = fields.Many2many(comodel_name='library.book',string = 'BooksRenting')   
+    book_id = fields.Many2many(comodel_name='library.book',string = 'BooksCopys')
