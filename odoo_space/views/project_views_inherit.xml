@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-
         <record id="view_project_form_inherit_space" model="ir.ui.view">
             <field name="name">project.project.inherit.space</field>
             <field name="model">project.project</field>
@@ -11,7 +10,7 @@
                     <field name="mission_id"></field>
                 </xpath>
 
-                <xpath expr="//sheet//notebook" position="inside">
+                <!-- <xpath expr="//sheet//notebook" position="inside">
                     <page string="Tripulación" attrs="{'invisible':[('mission_id','=',False)]}">
                         <field name="tripulation_ids">
                             <tree>
@@ -24,6 +23,8 @@
                         </field>
                     </page>
                 </xpath>
+
+                -->
             </field>
         </record>
     </data>
