@@ -13,7 +13,8 @@
         'security/ir.model.access.csv',
         'views/volunteers_views.xml',
         'views/approbation_views.xml',
-        'views/volunteers_menuitems.xml'
+        'views/volunteers_menuitems.xml',
+        'wizard/contact_wizard_view.xml'
     ],
     'demo' : [
         'demo/volunteers_demo.xml',

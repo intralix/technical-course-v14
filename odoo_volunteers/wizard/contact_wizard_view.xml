@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="volunteers_contact_wizard_fomr_view" >
+            <field name="name">volunteers.contact.wizard.fomr</field>
+            <field name="model">volunteers.contact.wizard</field>
+            <field name="arch" type="xml" >
+                <form string="contact volunteers">
+                    <group>
+                        <field name='task_id' />
+                        <field name='task_volunteer_ids' invisible="1" />
+                        <field name='volunteer_ids' domain="[('id','in', task_volunteer_ids)]" />
+                    </group>
+                    <footer>
+                        <button 
+                            name="create_volunteers"
+                            type="object"
+                            string="Create"
+                            class="oe_highlight"
+                        />
+                        or
+                        <button 
+                            special="cancel"
+                            string="Cancel"
+                        />
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <act_window 
+            id="launch_contact_wizard"
+            name="Conact"
+            binding_model="cooperative.volunteers"
+            res_model="volunteers.contact.wizard"
+            view_mode="form"
+            target="new"
+        />
+    </data>
+</odoo>
