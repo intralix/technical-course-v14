@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="space_mission_wizard_form_view" model="ir.ui.view">
+            <field name="name">space.mission.wizard.form</field>
+            <field name="model">space.mission.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Crear proyecto para la misión">
+                    <group>
+                        <field name="mission_id"></field>
+                        <field name="mission_project_ids" invisible="1"></field>
+                        <field name="project_ids" domain="[('id','in',mission_project_ids)]"></field>
+                    </group>
+                    <footer>
+                        <button name="create_mission_project" type="object" string="Crear" class="oe_highlight" />
+                        or
+                        <button special="cancel" string="Cancelar" />
+                    </footer>
+                </form>
+
+            </field>
+        </record>
+
+            <act_window if="launch_mission_wizard" name="Crear un proyecto" binding_model="space.mission" res_model="space.mission.wizard" view_model="form" target="new" />
+
+    </data>
+
+</odoo>
