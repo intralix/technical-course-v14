@@ -6,7 +6,7 @@
     'author' : 'logica mobile',
     'website' : 'https://www.intralix.com',
     'version' : '0.0.6',
-    'depends' : ['base'],
+    'depends' : ['base','web_map'],
     'category' : 'training',
     'data' : [            
             
