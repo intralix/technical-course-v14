@@ -8,7 +8,7 @@ class CopyBook(models.Model):
 
     _inherits = {
             #'delegation.library': 'library_id',
-            'delegation.book': 'book_id'
+            'library.book': 'book_id'
         }
 
     name = fields.Char(string='Name')
@@ -21,6 +21,6 @@ class CopyBook(models.Model):
                                   ondelete="cascade")
     """
     # una copia de libro pertenece a un libro
-    book_id = fields.Many2one('delegation.book',
+    book_id = fields.Many2one('library.book',
                                 required=True, 
                                 ondelete="cascade")  
