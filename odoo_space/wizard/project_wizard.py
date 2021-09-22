@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 class ProjectWizard(models.TransientModel):
-    _name='space.mision.wizard'
+    _name='space.mission.wizard'
     _description='Asistente: Crear proyecto para la misión'
 
     def _default_mission(self):
