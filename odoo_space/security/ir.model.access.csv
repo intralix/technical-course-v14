@@ -5,3 +5,6 @@ space_user,space user,model_space_space,,1,0,0,0
 mission_admin,mission admin,model_space_mission,group_space_admin,1,1,1,1
 mission_tripulation,mission tripulation,model_space_mission,,1,1,1,0
 mission_user,mission user,model_space_mission,,1,0,0,0
+mission_wizard_admin,mission wizard admin,model_space_mission_wizard,group_space_admin,1,1,1,1
+mission_wizard_tripulation,mission wizard tripulation,model_space_mission_wizard,,1,1,1,0
+mission_wizard_user,mission wizard user,model_space_mission_wizard,,1,0,0,0
