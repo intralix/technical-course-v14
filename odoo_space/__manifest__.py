@@ -13,7 +13,8 @@
         'views/space_menuitems.xml',
         'views/space_views.xml',
         'views/mission_views.xml',
-        'views/project_views_inherit.xml'
+        'views/project_views_inherit.xml',
+        'wizard/mission_wizard_view.xml'
     ],
     'demo': [
         'demo/space_demo.xml',
