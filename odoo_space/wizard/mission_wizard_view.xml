@@ -7,8 +7,10 @@
             <field name="arch" type="xml">
                 <form string="Crear proyecto para la misión">
                     <group>
-                        <field name="mission_id"></field>
-                        <field name="project_ids"></field>
+                        <field name="mission_id"/>
+                        <field name="mission_project_ids" invisible="1"/>
+                        <field name="project_ids" domain="[('id','in',mission_project_ids)]"/>
+
                     </group>
                     <footer>
                         <button name="create_mission_project" type="object" string="Crear" class="oe_highlight" />
