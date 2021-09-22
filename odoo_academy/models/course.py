@@ -55,7 +55,7 @@ class Course(models.Model):
     )
     
     
-    @api.onchange('base_price','aditional_fee')
+    @api.onchange('base_price','additional_fee')
     def _onchange_total_price(self):
         
         if(self.base_price < 0.00):
@@ -64,7 +64,7 @@ class Course(models.Model):
         self.total_price = self.base_price + self.additional_fee
         
         
-    @api.constrains('aditional_fee')
+    @api.constrains('additional_fee')
     def _check_aditional_fee(self):
         
         for record in self:
