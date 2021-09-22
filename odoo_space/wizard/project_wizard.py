@@ -13,9 +13,6 @@ class ProjectWizard(models.TransientModel):
 
     project_ids =  fields.One2many(comodel_name='project.project',string='Proyectos',inverse_name='mission_id')
     
-    mission_project_ids = fields.Many2many(comodel_name='project.project',string='Proyectos en la misión',related='mission_id.project_ids',help="Proyectos actuales")
-
-
     def create_mission_project(self):
         return
         #for project in self.project_ids:
