@@ -12,4 +12,4 @@ class Renting(models.Model):
 
     client_id = fields.Many2one(comodel_name='res.partner',string = 'Client')
     #book_id = fields.Many2many(comodel_name='library.book',string = 'BooksRenting')   
-    book_id = fields.Many2many(comodel_name='library.book',string = 'BooksCopys')
+    book_id = fields.Many2many(comodel_name='library.copybook',string = 'BooksCopys')
