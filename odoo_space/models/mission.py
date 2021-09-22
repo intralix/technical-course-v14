@@ -18,6 +18,8 @@ class Mission(models.Model):
     start_date = fields.Datetime(string='Fecha de lanzamiento')
 
     end_date = fields.Datetime(string='Fecha de llegada')
+
+    project_ids =  fields.One2many(comodel_name='project.project',string='Proyectos')
     
     active = fields.Boolean(string='Active')
 

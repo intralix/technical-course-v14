@@ -24,6 +24,9 @@
                             <page string="Tripulantes">
                                 <field name="tripulation_ids"/>
                             </page>
+                            <page string="Proyectos">
+                                <field name="project_ids"/>
+                            </page>
                             <page string="Descripción">
                                 <field name="description"/>
                             </page>
