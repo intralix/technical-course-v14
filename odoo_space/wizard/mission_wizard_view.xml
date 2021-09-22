@@ -20,7 +20,12 @@
             </field>
         </record>
 
-            <act_window if="launch_mission_wizard" name="Crear un proyecto" binding_model="space.mission" res_model="space.mission.wizard" view_model="form" target="new" />
+        <act_window id="launch_mission_wizard" 
+        name="Crear un proyecto" 
+        binding_model="space.mission" 
+        res_model="space.mission.wizard" 
+        view_model="form" 
+        target="new" />
 
     </data>
 
