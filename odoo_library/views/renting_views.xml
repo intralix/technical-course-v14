@@ -43,9 +43,10 @@
             <field name="model">library.renting</field>
             <field name="arch" type="xml">
                 <map res_partner="client_id">
-                  <marker-popup>
+          <!--        <marker-popup>
                     <field name="client_id" string="Customer"/>
                   </marker-popup>            
+        -->
                 </map>
             </field>
         </record>
