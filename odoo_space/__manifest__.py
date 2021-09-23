@@ -14,7 +14,8 @@
         'views/space_views.xml',
         'views/mission_views.xml',
         'views/project_views_inherit.xml',
-        'wizard/mission_wizard_view.xml'
+        'wizard/mission_wizard_view.xml',
+        'report/mission_report_template.xml'
     ],
     'demo': [
         'demo/space_demo.xml',
