@@ -45,21 +45,22 @@
                 <t t-set="title">Misión</t>
                 <div class="oe_structure">
                     <div class="container">
-                    <h3 t-field="mission.name"/>
-                    <p>Última modificación:
-                        <i t-field="mission.write_date" t-field-options='{"format":"long"}'/>
-                    </p>
-                    <p>Misión:
-                        <t t-esc="mission.space_id.name"/>
-                    </p>
-                    <h3>Tripulantes:</h3>
-                    <ul>
-                        <t t-foreach="mission.tripulation_ids" t-as="crewmember">
-                            <li>
-                                <span t-field="crewmember.name"/>
-                            </li>
-                        </t>
-                    </ul>
+                        <h3 t-field="mission.name"/>
+                        <p>Última modificación:
+                            <i t-field="mission.write_date" t-field-options='{"format":"long"}'/>
+                        </p>
+                        <p>Misión:
+                            <t t-esc="mission.space_id.name"/>
+                        </p>
+                        <h3>Tripulantes:</h3>
+                        <ul>
+                            <t t-foreach="mission.tripulation_ids" t-as="crewmember">
+                                <li>
+                                    <span t-field="crewmember.name"/>
+                                </li>
+                            </t>
+                        </ul>
+                    </div>
                 </div>
             </t>
         </template>
