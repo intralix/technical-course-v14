@@ -9,7 +9,7 @@
                     <group>
                         <field name="session_id"/>
                         <field name="session_students_ids" invisible="1"/>
-                        <field name="student_ids" domain="[('id', 'in', 'session_students_ids')]"/>
+                        <field name="student_ids" domain="[('id', 'in', session_students_ids)]"/>
                     </group>
                     <footer>
                         <button name='create_sales_orders' type="object" 
