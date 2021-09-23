@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 {
     'name' : 'Odoo Academy',
     'summary' : 'Academy app to manage Trainig',
@@ -12,7 +11,7 @@
     'website' : 'https://www.odoo.com',
     'category' : 'training',
     'version' : '0.0.2',
-    'depends' : ['base','sale'],
+    'depends' : ['sale'],
     
     'data' : [
         'security/academy_security.xml',
@@ -20,7 +19,9 @@
         'views/academy_menu_items.xml',
         'views/course_views.xml',
         'views/session_views.xml',
-        'views/sales_view_inherit.xml'
+        'views/sales_view_inherit.xml',
+        'views/product_views_inherit.xml',
+        'wizard/sale_wizard_view.xml'
     ],
     
     'demo' : [
