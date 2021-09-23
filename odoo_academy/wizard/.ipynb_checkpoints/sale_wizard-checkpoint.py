@@ -29,13 +29,12 @@ class SaleWizard(models.TransientModel):
         comodel_name='res.partner',
         string='Students for Sales Order'
     )
-    
-    def create_sales_orders(self):        
         
-        session_product_id = self.env['product.product'].search([('is_session_product','=', True)], limit=1)        
+    def create_sales_orders(self):
         
+        session_product_id = self.env['product.product'].search(['is_session_product','=', True], limit=1)
         if session_product_id:
-            
+
             for student in self.student_ids:
                 order_id = self.env['sale.order'].create({
                     'partner_id': student.id,

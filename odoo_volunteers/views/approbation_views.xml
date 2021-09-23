@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_order_form_inherit_volunteers" >
+            <field name="name">approbation.form.inherit.volunteers</field>
+            <field name="model">cooperative.volunteers</field>
+            <field name="inherit_id" ref="odoo_volunteers.volunteers_view_form" />
+            <field name="arch" type="xml" >
+                <field name="type" position="after">
+                    <field name="approbation_id" />
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
