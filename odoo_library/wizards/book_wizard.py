@@ -15,3 +15,11 @@ class BookWizard(models.TransientModel):
                              default = _default_session
                               )
     
+    def _default_session_client(self):
+        return self.env['library.renting'].browse(self._context.get('active_id'))
+
+    client_id = fields.Many2one(comodel_name='library.renting',
+                             string = 'Cliente',
+                             required = True,
+                             default = _default_session_client
+                              )

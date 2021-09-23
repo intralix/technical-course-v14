@@ -8,7 +8,8 @@
         <field name="arch" type="xml">
         <form string = 'View Book'>
             <group>
-            <field name="book_id"/>            
+            <field name="book_id"/>       
+            <field name="client_id"/>            
             </group>
         </form>
         </field>
