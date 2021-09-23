@@ -22,7 +22,7 @@
         'views/product_views_inherit.xml',
         'wizard/sale_wizard_view.xml',
         'report/session_report_template.xml',
-        'views/academy_web_templates.xml'
+        'views/academy_web_templates.xml',
         'wizard/sale_wizard_view.xml'
     ],
     
