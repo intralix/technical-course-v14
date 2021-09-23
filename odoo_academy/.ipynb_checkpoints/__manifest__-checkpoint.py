@@ -10,8 +10,9 @@
     'author' : 'Javina',
     'website' : 'https://www.odoo.com',
     'category' : 'training',
-    'version' : '0.0.2',
-    'depends' : ['sale'],
+    'version' : '0.0.3',
+    'depends' : ['base','sale','website'],
+
     
     'data' : [
         'security/academy_security.xml',
@@ -21,6 +22,9 @@
         'views/session_views.xml',
         'views/sales_view_inherit.xml',
         'views/product_views_inherit.xml',
+        'wizard/sale_wizard_view.xml',
+        'report/session_report_template.xml',
+        'views/academy_web_templates.xml'
         'wizard/sale_wizard_view.xml'
     ],
     
