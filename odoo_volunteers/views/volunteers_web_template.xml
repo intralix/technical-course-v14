@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="volunteers_website">
+            <t t-call="website.layout">
+                <t t-set="title">Volunteers</t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <h1>Volunteer</h1>
+                        <t t-foreach="volunteers" t-as="volunteer">
+                            <h3>
+                                <t t-esc="volunteer.id" />
+                                <t t-esc="volunteer.name" />
+                            </h3>
+                            <strong>Tasks</strong>
+                            <t t-foreach="volunteer.task_ids" t-as="task" >
+                                <p>
+                                    <a t-attf-href="/volunteer/{{slug(task)}}">
+                                        <t t-esc="task.name" />
+                                    </a>
+                                </p>
+                            </t>
+                        </t>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <template id="task_website">
+            <t t-call="website.layout">
+                <t t-set="title">Tasks</t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <h3>
+                            <t t-esc="task.name" />
+                        </h3>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

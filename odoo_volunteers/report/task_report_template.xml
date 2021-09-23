@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report
+        id="report_task"
+        model="cooperative.volunteers"
+        string="Task report"
+        name="odoo_volunteers.report_task_document"
+        file="odoo_volunteers.report_task"
+        report_type="qweb-html"
+    />
+    <template id="report_task_document">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout" >
+                    <div class="page">
+                        <h2 t-field="doc.name" class="mt16" />
+                        <div class="row mt32 mb32" id="task_info" >
+                            <div class="col-auto mw-100 mb-2">
+                                <strong>Task name:</strong>
+                                <span t-field="doc.name"/>
+                            </div>
+                            <div class="col-auto mw-100 mb-2">
+                                <strong>Task description:</strong>
+                                <span t-field="doc.description"/>
+                            </div>
+                            <div class="col-auto mw-100 mb-2">
+                                <strong>Task leader:</strong>
+                                <span t-field="doc.leader"/>
+                            </div>
+                            <div class="col-auto mw-100 mb-2">
+                                <strong>Task state:</strong>
+                                <span t-field="doc.state"/>
+                            </div>
+                            <div class="col-auto mw-100 mb-2">
+                                <strong>Task type:</strong>
+                                <span t-field="doc.type"/>
+                            </div>
+                            <div class="col-auto mw-100 mb-2">
+                                <strong>Task Duration:</strong>
+                                <span t-field="doc.start_date"/>
+                                to
+                                <span t-field="doc.end_date"/>
+                            </div>
+                            <div class="col-auto mw-100 mb-2">
+                                <strong>Task recurrence:</strong>
+                                <span t-field="doc.recurrence"/>
+                            </div>
+                        </div>
+                        <h4>Volunteers</h4>
+                        <table class="table table-sm o_main_table">
+                            <thead>
+                                <tr>
+                                    <th name="th_name">Name</th>
+                                    <th name="th_phone">Phone</th>
+                                    <th name="th_email">Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="doc.volunteer_ids" t-as="volunteers" >
+                                    <tr>
+                                        <td name="td_name">
+                                            <span t-field="volunteers.name" />
+                                        </td>
+                                        <td name="td_phone">
+                                            <span t-field="volunteers.phone" />
+                                        </td>
+                                        <td name="td_email">
+                                            <span t-field="volunteers.email" />
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
