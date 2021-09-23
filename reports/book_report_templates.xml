@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <report id="report_book" 
+            model="library.book" 
+            string = "Reporte de libros" 
+            name="odoo_library.report_book_document" 
+            file = "odoo_library.report_book" 
+            report_type = "qweb-html"
+    />
+
+<template id="report_book_document">
+    <t t-call="web.html_container"/>
+    <t t-foreach="docs" t-as="doc">
+        <t t-call="web.external_layout">
+        <div class="page">
+            <h2 t-field="doc.name" class="mt16"/>
+            <div class="row mt32 mb32" id="book_info">
+                <div class="col-auto mw-100 mb-2" id="book_info">
+                <strong>Titulo</strong>
+                <t t-if="doc.name">
+                    <span t-field="doc.name"></span>
+                </t>
+                <strong>Autor</strong>
+                <t t-if="doc.titulo">
+                    <span t-field="doc.titulo"></span>
+                </t>
+                <strong>Año</strong>
+                <t t-if="doc.year">
+                    <span t-field="doc.year"></span>
+                </t>
+                <strong>ISBN</strong>
+                <t t-if="doc.isbn">
+                    <span t-field="doc.isbn"></span>
+                </t>              
+                </div>
+            </div>
+        </div>
+        </t>
+    </t>    
+</template>    
+
+
+</odoo>

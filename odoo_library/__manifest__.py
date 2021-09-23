@@ -15,7 +15,8 @@
             'views/library_menuitems.xml',
             'views/books_views.xml',
             'views/renting_views.xml',
-            'wizards/book_wizard_view.xml'
+            'wizards/book_wizard_view.xml',
+            'reports/book_report_templates.xml'
 
     ],
     'demo' : [ 
