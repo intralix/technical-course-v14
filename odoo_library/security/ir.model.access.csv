@@ -5,3 +5,5 @@ renting_admin,renting admin,model_library_renting,group_library_admin,1,1,1,1
 renting_read_all,renting read all,model_library_renting,,1,0,0,0
 bookscopy_admin,bookscopy admin,model_library_copybook,group_library_admin,1,1,1,1
 bookscopy_read_all,bookscopy read all,model_library_copybook,,1,0,0,0
+bookwizard_admin,bookwizard admin,model_library_book_wizard,group_library_admin,1,1,1,1
+bookwizard_read_all,bookwizard read all,model_library_book_wizard,,1,0,0,0
