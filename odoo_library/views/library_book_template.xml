@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+        <template id="book_website">
+            <t t-call="website.layout">
+                <t t-set="title">Libreria</t>
+                <div class="container">
+                    <h1>Libros</h1>
+                <t t-foreach="books" t-as="book">
+                        
+                        <h3>
+                            <t t-esc="book.name"/>                           
+                        </h3>
+                        <p>Autor:
+                            <span t-field="book.titulo"></span>
+                        </p>
+
+                        <p>Genero:
+                            <span t-field="book.genre"></span>
+                        </p>
+                        
+                        <p>Año:
+                            <span t-field="book.year"></span>
+                        </p>
+
+                        <p><strong>ISBN:</strong>
+                            <span t-field="book.isbn"></span>
+                        </p>
+
+                    
+                </t>
+                </div>
+            </t>
+        </template>
+
+    </data>
+
+
+
+</odoo>

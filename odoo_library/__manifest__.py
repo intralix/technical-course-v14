@@ -6,7 +6,7 @@
     'author' : 'logica mobile',
     'website' : 'https://www.intralix.com',
     'version' : '0.0.6',
-    'depends' : ['base','web_map'],
+    'depends' : ['base','web_map','website'],
     'category' : 'training',
     'data' : [            
             
@@ -16,7 +16,8 @@
             'views/books_views.xml',
             'views/renting_views.xml',
             'wizards/book_wizard_view.xml',
-            'reports/book_report_templates.xml'
+            'reports/book_report_templates.xml',
+            'views/library_book_template.xml'
 
     ],
     'demo' : [ 
