@@ -7,7 +7,7 @@ class Space(http.Controller):
     def index(self,**kw):
         return "Hola mundo"
 
-    @http.route('/space/missions/',auth='public',website=True)
+    @http.route('/space/ships/',auth='public',website=True)
     def ships(self,**kw):
         ships = http.request.env['space.space'].search([])
         return http.request.render('odoo_space.space_website',{

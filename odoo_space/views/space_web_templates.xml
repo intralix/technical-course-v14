@@ -24,8 +24,8 @@
                             <strong>Misiones</strong>
                             <t t-foreach="ship.mission_ids" t-as="mission">
                                 <p>
-                                    <a t-att-href="/space/{{ slug(mission)}}">
-                                        <t t-esc="mission.name"/>
+                                    <a t-attf-href="/space/{{ slug(mission)}}">
+                                         <t t-esc="mission.name"/> 
                                     </a>
                                 </p>
                                 <p>Fecha de lanzamiento:
