@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, api
+from odoo import models, fields, api, _
 from odoo.exceptions import UserError, ValidationError
 
 class Space(models.Model):
@@ -44,4 +44,4 @@ class Space(models.Model):
     def _check_dimensions(self):
         for record in self:
             if record.width > record.height:
-                raise UserError('El ancho de la nave no puede ser mayor a su altura.')
+                raise UserError(_('El ancho de la nave no puede ser mayor a su altura.'))
