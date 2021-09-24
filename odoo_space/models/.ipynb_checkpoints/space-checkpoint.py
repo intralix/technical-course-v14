@@ -9,9 +9,14 @@ class Space(models.Model):
     name = fields.Char(string='Nombre',required=True)
     
     description = fields.Text(string='Descripción de la nave')
+
+    securitydesc = fields.Text(string='Descripción del a seguridad')
     
     width = fields.Integer(string='Anchura (Mts)',required=True)
     height = fields.Integer(string='Altura (Mts)',required=True)
+
+    fuel = fields.Integer(string='Combustible actual',required=True)
+    motor = fields.Integer(string='Cantidad de motores')
     
     fueltype = fields.Selection(string='Consumible',
                             selection=[
@@ -30,6 +35,8 @@ class Space(models.Model):
                             copy=False)
     
     passengers = fields.Integer(string='Pasajeros',required=False)
+
+    mission_ids = fields.One2many(comodel_name='space.mission',inverse_name='space_id',string='Misiones disponibles')
     
     active = fields.Boolean(string='Active')
 
